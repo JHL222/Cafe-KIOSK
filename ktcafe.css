@@ -1,0 +1,542 @@
+body{
+    background-color: rgb(236, 250, 240);
+}
+.topbar1{
+    font-size: 150%;
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    
+}
+.home{
+    text-decoration: none;
+    width: 200px;
+    display: inline-block;
+    left: 10%;
+    list-style:none;
+    padding-left:0px;
+    line-height: 2;
+    font-weight: bold;
+    text-align: left;
+}
+.mainlogo{
+    width: 200px;
+    display: inline-block;
+    list-style:none;
+    padding-left:0px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.category{
+    width: 100%;
+    list-style:none;
+    padding-top: 10px;
+    padding-left:0px;
+    padding-bottom: 10px;
+    line-height: 2;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.cat_ice{
+    width: 20%;
+    display: inline-block;
+    background-color: lightgray;
+}
+.cat_ice:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(94, 97, 104, 0.6);
+}
+.cat_hot{
+    width: 20%;
+    display: inline-block;
+    background-color: lightgray;
+}
+.cat_hot:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(94, 97, 104, 0.6);
+}
+.cat_tea{
+    width: 20%;
+    display: inline-block;
+    background-color: lightgray;
+}
+.cat_tea:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(94, 97, 104, 0.6);
+}
+.cat_ade{
+    width: 20%;
+    display: inline-block;
+    background-color: lightgray;
+}
+.cat_ade:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(94, 97, 104, 0.6);
+}
+.menu{
+    background-color: white;
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+}
+#ice{
+    width: 100vw;
+    height: 70vh;
+}
+#hot{
+    width: 100vw;
+    height: 70vh;
+}
+#tea{
+    width: 100vw;
+    height: 70vh;
+}
+#ade{
+    width: 100vw;
+    height: 70vh;
+}
+#menu1{
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 130%;
+}
+#menu1 div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 0px;
+    border: 1px solid;
+}
+#menu2{
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 130%;
+}
+#menu2 div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 0px;
+    border: 1px solid;
+}
+#menu3{
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 130%;
+}
+#menu3 div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 0px;
+    border: 1px solid;
+}
+#menu4{
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 130%;
+}
+#menu4 div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 0px;
+    border: 1px solid;
+}
+#menu5{
+    align-content: center;
+    width: 200px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 130%;
+}
+#menu5 div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 0px;
+    border: 1px solid;
+}
+
+/* .ice div{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid;
+} */
+#name{
+    position: absolute;
+    top: 330px;
+    left: 120px;
+}
+#아이스아메리카노 {
+    background: url(images/ice/americano.jpg) no-repeat center / cover;
+}
+#카페라떼 {
+    background: url(images/ice/cafelatte.png)  no-repeat center / cover;
+}
+#콜드브루 {
+    background: url(images/ice/coldbrew.jpg)  no-repeat center / cover;
+}
+#카페모카 {
+    background: url(images/ice/mocha.jpg)  no-repeat center / cover;
+}
+#바닐라라떼 {
+    background: url(images/ice/vanilla.jpg)  no-repeat center / cover;
+}
+
+#아메리카노 {
+    background: url(images/hot/americano.jpg) no-repeat center / cover;
+}
+#에스프레소 {
+    background: url(images/hot/espresso.jpg)  no-repeat center / cover;
+}
+#카푸치노 {
+    background: url(images/hot/capuchino.png)  no-repeat center / cover;
+}
+
+#카모마일티 {
+    background: url(images/tea/camomile.jpg) no-repeat center / cover;
+}
+#허브티 {
+    background: url(images/tea/herb.png)  no-repeat center / cover;
+}
+#아이스티 {
+    background: url(images/tea/icetea.jpg)  no-repeat center / cover;
+}
+#자스민티 {
+    background: url(images/tea/jasmine.jpg)  no-repeat center / cover;
+}
+
+#레몬에이드 {
+    background: url(images/ade/lemonade.gif) no-repeat center / cover;
+}
+#자몽에이드 {
+    background: url(images/ade/grapefruit.gif)  no-repeat center / cover;
+}
+#모히또 {
+    background: url(images/ade/mojitto.gif)  no-repeat center / cover;
+}
+#복숭아에이드 {
+    background: url(images/ade/peach.png)  no-repeat center / cover;
+}
+#pay {
+    width: 100%;
+    height: 150px;
+    background: #eeeeee;
+    margin-top: 10px;
+}
+
+#order_list {
+    width: 65%;
+    height: 100%;
+    background: white;
+    font-size: 120%;
+    display: inline-block;
+    line-height: 20px;
+    overflow: hidden;
+    overflow: scroll;
+}
+#order_list div {
+    height: 15%;
+    display: inline;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    display: inline-block;
+}
+#order_list div div {
+    height: 65%;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bolder;
+    display: inline-block;
+}
+#order_list_right {
+    position: absolute;
+    right: 30px;
+    width: 20%;
+    flex-direction: column;
+    display: inline-block;
+}
+
+
+#screen_to_window_pay {
+    width: 100%;
+    height: 150%;
+    background: #595959;
+    opacity: 0.5;
+    position: absolute; 
+    display: none;
+    top: 0;
+}
+#window_pay {
+    margin-top: 15%;
+    margin-left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top: 0;
+    display: none;
+    background: white;    
+}
+#window_top {
+    background: bisque;
+    width: 100%;
+    height: 7%;
+    font: bold 13px black;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+#window_top div {
+    margin-top: 3%;
+}
+#window_top #close{
+    cursor: pointer;
+}
+#window_order_list {
+    width: 100%;
+    height: 60%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#window_order_list div {
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: 120%;
+}
+#window_1 {
+    margin-top: 5%;
+}
+#window_num_price {
+    width: 90%;
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    border: solid #cac8c8 1px;
+    margin-left: 5%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+}
+#window_num {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#window_price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+.ex_css {
+    color:cornflowerblue;
+    font-size: 20px;
+}
+#window_bottom {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    padding-top: 3%;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+#window_bottom div{
+    border-radius: 5px;
+    line-height: 160%;
+    cursor: pointer;
+}
+#win_close {
+    width: 25%;
+    height: 40%;
+    background: lightblue;
+    cursor: pointer;
+}
+#incafe {
+    width: 33%;
+    height: 40%;
+    background: bisque;
+    cursor: pointer;
+}
+#takeout {
+    width: 33%;
+    height: 40%;
+    background: bisque;
+    cursor: pointer;
+}
+#win_close2 {
+    display: none;    
+    width: 23%;
+    height: 40%;
+    background: lightblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+#card {
+    width: 40%;
+    height: 40%;
+    display: none;
+    background: bisque;
+    font-size: 15px;
+
+}
+#w_card {
+    margin-top: 5%;
+    margin-left: 10%;
+    position: absolute;
+    display: none;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    background: white;    
+}
+#w_card_top {
+    background: bisque;
+    width: 100%;
+    height: 7%;
+    font: bold 15px white;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 50px;
+    color: black;
+}
+#w_card_top #close{
+    cursor: pointer;
+}
+#w_card_top div {
+    margin-top: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#w_block {
+    width: 50%;
+    height: 35%;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 130%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+
+}
+#w_block div {
+    display: flex;
+    justify-content: center;
+    font-size: 130%;
+}
+/* #insert_card_w {
+    width: 270px;
+    height: 120px;
+    margin-top: 200px;
+    margin-left: 300px;
+    background: url(images/insert_card_w.png) no-repeat center/cover;
+} */
+#w_list {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+#w_list div {
+    height: 30%;
+    line-height: 220%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#w_list_1 {
+    background: #DAE3F3;
+    
+}
+#w_card_total_price {
+    color: black;
+}
+#w_bottom {
+    margin-left: 10%;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 500%;
+    font-weight: bolder;
+
+}
+
+#window_bottom {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    padding-top: 3%;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+#cancel {
+    width: 35%;
+    height: 80px;
+    background: lightblue;
+    cursor: pointer;
+}
+#request {
+    width: 55%;
+    height: 80px;
+    background: bisque;
+    cursor: pointer;
+}

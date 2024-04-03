@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JH키오스크</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href = './ktcafe.css?ver=1.2' rel = 'stylesheet'>
+        <script src = "./ktcafe.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body onload = "cat(0)">
+        <header>
+            <nav class = "topbar">
+                <div class = "topbar1">
+                    <div class = "home">
+                        <a href = './index.html' style = "text-decoration: none; color: black;">HOME</a>
+                    </div>
+                    <div class = "mainlogo">
+                        JH KIOSK
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class = "category">
+            <div class = "cat_ice" id = "cat_ice" onclick="cat(0)">
+                ICE
+            </div>
+            <div class = "cat_hot" id = "cat_hot" onclick="cat(1)">
+                HOT
+            </div>
+            <div class = "cat_tea" id = "cat_tea" onclick="cat(2)">
+                TEA
+            </div>
+            <div class = "cat_ade" id = "cat_ade" onclick="cat(3)">
+                ADE
+            </div>
+        </div>
+        <div class = "menu">
+            <div id="ice">
+                <div id = "menu1">
+                    <div id="아이스아메리카노" title="no_option" data-price="3300" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>아이스 아메리카노</span><br>
+                    <span>3300원</span>
+                </div>
+                <div id = "menu2">
+                    <div id="카페라떼" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>카페라떼</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu3">
+                    <div id="콜드브루" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>콜드브루</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu4">
+                    <div id="카페모카" title="no_option" data-price="4000" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>카페모카</span><br>
+                    <span>4000원</span>
+                </div>
+                <div id = "menu5">
+                    <div id="바닐라라떼" title="no_option" data-price="4000" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>바닐라라떼</span><br>
+                    <span>4000원</span>
+                </div>
+            </div>
+
+            <div id="hot">
+                <div id = "menu1">
+                    <div id="아메리카노" title="no_option" data-price="3000"  onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>아메리카노</span><br>
+                    <span>3000원</span>
+                </div>
+                <div id = "menu2">
+                    <div id="에스프레소" title="no_option" data-price="3000" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>에스프레소</span><br>
+                    <span>3000원</span>
+                </div>
+                <div id = "menu3">
+                    <div id="카푸치노" title="no_option" data-price="3500"  onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>카푸치노</span><br>
+                    <span>3500원</span>
+                </div>
+            </div>
+
+            <div id="tea">
+                <div id = "menu1">
+                    <div id="카모마일티" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>카모마일티</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu2">
+                    <div id="허브티" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>허브티</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu3">
+                    <div id="아이스티" title="no_option" data-price="3000" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>아이스티</span><br>
+                    <span>3000원</span>
+                </div>
+                <div id = "menu4">
+                    <div id="자스민티" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>자스민티</span><br>
+                    <span>3500원</span>
+                </div>
+            </div>
+
+            <div id="ade">
+                <div id = "menu1">
+                    <div id="레몬에이드" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>레몬에이드</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu2">
+                    <div id="자몽에이드" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>자몽에이드</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu3">
+                    <div id="모히또" title="no_option" data-price="3500" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>모히또</span><br>
+                    <span>3500원</span>
+                </div>
+                <div id = "menu4">
+                    <div id="복숭아에이드" title="no_option" data-price="4000" onclick="option(this.id, this.title, this.dataset.price)"></div>
+                    <span>복숭아에이드</span><br>
+                    <span>4000원</span>
+                </div>
+            </div>
+        </div>
+        <div id="pay">
+            <div id="order_list">
+                <div id="order_1" class="cart">
+                    <div id="range_1"></div>
+                    <div id="amount_1"></div>
+                    <div id="item_price_1"></div>
+                </div>
+                <div id="order_2" class="cart">
+                    <div id="range_2"></div>
+                    <div id="amount_2"></div>
+                    <div id="item_price_2"></div>
+                </div>
+                <div id="order_3" class="cart">
+                    <div id="range_3"></div>
+                    <div id="amount_3"></div>
+                    <div id="item_price_3"></div>
+                </div>
+                <div id="order_4" class="cart">
+                    <div id="range_4"></div>
+                    <div id="amount_4"></div>
+                    <div id="item_price_4"></div>
+                </div>
+                <div id="order_5" class="cart">
+                    <div id="range_5"></div>
+                    <div id="amount_5"></div>
+                    <div id="item_price_5"></div>
+                </div>
+                <div id="order_6" class="cart">
+                    <div id="range_6"></div>
+                    <div id="amount_6"></div>
+                    <div id="item_price_6"></div>
+                </div>
+                <div id="order_7" class="cart">
+                    <div id="range_7"></div>
+                    <div id="amount_7"></div>
+                    <div id="item_price_7"></div>
+                </div>
+
+            </div>
+
+            <div id="order_list_right">
+                <div id="item_number">_________________________<br>선택한 상품 </div>
+                <div id="pay_btn">
+                    <div id="total_price">0원</div>
+                </div>
+                <div id = "resetbtn">
+                    <input type = "button" value = "초기화" onclick = "reset()">
+                </div>
+            </div>
+        </div>  
+        
+        <div id="screen_to_window_pay"></div>
+
+                <div id="window_pay">
+                    <div id="window_top">
+                        <div>주문 세부내역을 다시 한번 확인하여 주세요</div>
+                        <div id = "close" onclick="close_window_pay()">X</div>
+                    </div>
+                    <div id="window_order_list">
+                        <div id="window_1">
+                            <div id="w_order_1"></div>
+                            <div id="w_number_1"></div>
+                        </div>
+                        <div id="window_2">
+                            <div id="w_order_2"></div>
+                            <div id="w_number_2"></div>
+                        </div>
+                        <div id="window_3">
+                            <div id="w_order_3"></div>
+                            <div id="w_number_3"></div>
+                        </div>
+                        <div id="window_4">
+                            <div id="w_order_4"></div>
+                            <div id="w_number_4"></div>
+                        </div>
+                        <div id="window_5">
+                            <div id="w_order_5"></div>
+                            <div id="w_number_5"></div>
+                        </div>
+                        <div id="window_6">
+                            <div id="w_order_6"></div>
+                            <div id="w_number_6"></div>
+                        </div>
+                        <div id="window_7">
+                            <div id="w_order_7"></div>
+                            <div id="w_number_7"></div>
+                        </div>
+
+                    </div>
+                    <div id="window_num_price">
+                        <div id="window_num">
+                            <div>총 수량 &nbsp;</div>
+                            <div id="w_total_number" class="ex_css"></div>
+                            <div>개</div>
+                        </div>
+                        <div id="window_price">
+                            <div>총 결제금액 &nbsp;</div>
+                            <div id="w_total_price" class="ex_css"></div>
+                            <div>원</div>
+                        </div>
+                    </div>
+                    <div id="window_bottom">
+                        <div id="win_close" onclick="close_window_pay()">←<br>닫기</div>
+                        <div id="incafe" onclick="change_window_btn()"><br>매장</div>
+                        <div id="takeout" onclick="change_window_btn()"><br>포장</div>
+
+                        <div id="win_close2" onclick="back_2_window_btn()">←<br>뒤로가기</div>
+                        <div id="card" onclick="open_w_card()"><br>카드결제</div>
+
+                    </div>
+                </div>  
+
+                <div id="w_card">
+                    <div id="w_card_top">
+                        <div>카드 결제</div>
+                        <div id = 'close' onclick="close_w_card()">X</div>
+                    </div>
+                    <div id="w_block">
+                        <div>신용/체크카드를 넣어주세요</div>
+                        <div id="insert_card_w"></div>
+                    </div>
+                    <div id="w_list">
+                        <div id="w_list_1">
+                            <div>총 결제금액</div>
+                            <div id="w_card_total_price"></div>
+                        </div>
+                        <div>
+                            <div>할부개월</div>
+                            <div >일시불</div>
+                        </div>
+                        <div id="w_list_1">
+                            <div>카드번호</div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="w_bottom">
+                        <div id="cancel" onclick="close_w_card()">취소</div>
+                        <div id="request" onclick="complete()"> 승인요청</div>
+                    </div>
+                </div>
+
+                <script>
+                    function complete(){
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "결제가 완료되었습니다.",
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(function(){
+                                history.go(0);
+                        });
+                    }
+                </script>
+    </body>
+</html>
